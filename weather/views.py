@@ -6,13 +6,13 @@ class HomePageView(TemplateView):
     template_name = "home.html"
 
 
-class TodayPageView(TemplateView):
+class TodayWeatherView(TemplateView):
     template_name = "today.html"
 
 
-class FuturePageView(TemplateView):
+class FutureWeatherView(TemplateView):
     template_name = "future.html"
 
 
-class PastPageView(TemplateView):
+class PastWeatherView(TemplateView):
     template_name = "past.html"

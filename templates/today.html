@@ -1,1 +1,15 @@
 <h1> information about current weather </h1>
+
+{% block content %}
+ <form action="{% url 'today' %}" method="POST"> {% csrf_token %}
+    <!-- the 'as_p' method turns the django-rendered form into html for the user -->
+    {{ form }}
+    <input type="submit", value="Search" />
+ </form>
+<!--<form>{% csrf_token %}-->
+<!--  <p>Enter latitude: <input type="text" name="latitude"></p>-->
+<!--  <p>Enter longitude: <input type="text" name="longitude"></p>-->
+<!--<input type="submit" value="Search">-->
+<!--</form>-->
+
+{% endblock %}
